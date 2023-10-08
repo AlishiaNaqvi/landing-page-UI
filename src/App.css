@@ -1,0 +1,86 @@
+body {
+  background-image: url('./gradient-golden-luxury-background_52683-69832.avif');
+  /* Add more body styles as needed */
+}
+
+body.daytime {
+  background-image: url('./blue-curve-background_53876-113112.avif');
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 90%;
+  text-align: center;
+  margin-left: 10vh;
+  margin-top: 22vh;
+}
+
+.main-container.daytime {
+  background-color: #8ccde7; /* Set daytime background color */
+  color: #333; /* Set daytime text color */
+}
+
+.main-container.nighttime {
+  background-color: #5f5f5f; /* Set nighttime background color */
+  color: #ecf0f1; /* Set nighttime text color */
+}
+
+.round-picture {
+  width: 150px;
+  height: 150px;
+  margin-top: -150px;
+  border-radius: 50%;
+  background-image: url('./example.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.description h2 {
+  margin-bottom: 6vh;
+  font-size: 24px;
+}
+
+.description p {
+  font-size: 18px;
+  color: inherit; /* Inherit text color from parent (main-container) */
+}
+
+/* Add styles for headings and paragraphs within the container */
+.main-container.daytime h2,
+.main-container.nighttime h2,
+.main-container.daytime p,
+.main-container.nighttime p {
+  color: inherit; /* Inherit text color from parent (main-container) */
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .round-picture {
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .description h2 {
+    margin-bottom: 3vh;
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+}
